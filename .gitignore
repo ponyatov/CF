@@ -1,0 +1,11 @@
+*~
+*.swp
+*.log
+
+/CF/
+/docs/
+
+/__pycache__/
+*.pyc
+
+!.gitignore

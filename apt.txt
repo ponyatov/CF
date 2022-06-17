@@ -1,0 +1,2 @@
+git make curl rsync
+python3 python3-pip

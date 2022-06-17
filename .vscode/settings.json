@@ -1,0 +1,46 @@
+{
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.f11",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; make meta \u000D"}}]
+        },
+        {
+            "command": "multiCommand.f12",
+            "sequence": [
+                "workbench.action.files.saveAll",
+                {"command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; make all \u000D"}}]
+        },
+    ],
+
+    // files
+    "files.exclude": {
+        "docs/**":true,
+        "CF/**":true,
+        ".vscode/*.log":true,
+        "__pycache__/**":true,
+    },
+    "files.watcherExclude": {
+        "docs/**":true,
+        "__pycache__/**":true,
+    },
+    "files.associations": {
+    },
+
+    // editor
+    "editor.tabSize": 4,
+    "editor.rulers": [80],
+    "workbench.tree.indent": 32,
+    "git.ignoreLimitWarning": true,
+
+    // msys2
+    "terminal.integrated.shell.windows": "D:\\msys2\\usr\\bin\\bash.exe",
+    "terminal.integrated.shellArgs.windows": ["--login", "-i"],
+    "terminal.integrated.env.windows": {
+        "MSYSTEM": "MINGW64",
+        "CHERE_INVOKING": "1",
+    },
+}
